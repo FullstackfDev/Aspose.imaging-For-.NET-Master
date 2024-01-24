@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26F155C3-9026-450E-A2FB-7F7F54747499}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharp</RootNamespace>
+    <AssemblyName>CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Aspose.Imaging.Examples.CSharp.RunExamples</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Data\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Imaging, Version=23.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Imaging.23.12.0\lib\net40\Aspose.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DrawingAndFormattingImages\GraphicsMeasureString.cs" />
+    <Compile Include="ModifyingAndConvertingImages\APNG\CreateAnimationFromMultipageImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\APNG\CreateAPNGAnimationFromGraphics.cs" />
+    <Compile Include="ModifyingAndConvertingImages\APNG\CreateAPNGAnimationFromSinglePageImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\APNG\ExportAPNGToGif.cs" />
+    <Compile Include="Apply License\MeteredLicensing.cs" />
+    <Compile Include="DrawingAndFormattingImages\CombineImages.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphics.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawRasterImageOnEMF.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawRasterImageOnSVG.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawRasterImageOnWMF.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawVectorImageToRasterImage.cs" />
+    <Compile Include="DrawingAndFormattingImages\Imagetransparency.cs" />
+    <Compile Include="DrawingAndFormattingImages\InterruptMonitorSupport.cs" />
+    <Compile Include="ModifyingAndConvertingImages\APNG\GetOriginalOptions.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AutoImageMasking.cs" />
+    <Compile Include="ModifyingAndConvertingImages\BigTiff\BigTiffLoadExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\BMPToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Bmp\BmpRLE4.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\ApsToPsd.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPdfExmple.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPngExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\CdrToPsdMultipageExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\PantoneGoeCoatedPalette.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\SupportOfCDR.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CDR\SupportTextStylesItalicUnderline.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CMX\CmxToPdfExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CMX\CMXToPNGConversion.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CMX\CmxToTiffExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CompressedVectorFormats.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPNG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CropEMFFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CroppingWMFfileWhileConvertingtoPNG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CropWMFFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Deskew.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DicomCompression.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DicomToPngExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\ExportToDicom.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\SupportStoringXmpTags.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ParallelDJVUImagesProcessingUsingMultithreading.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DNG\ConvertingDNGToJPG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DocumentConvertionProgress.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Dxf\ExportToDxf.cs" />
+    <Compile Include="ModifyingAndConvertingImages\EPS\ExportEps.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExportImagesInMultiThreadedEnvironment.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExportRasterImageToSvg.cs" />
+    <Compile Include="ModifyingAndConvertingImages\FileExtensionAwareSave.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Fonts\SpecifyFont.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Gif\CreateGifUsingAddPage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Gif\SupportGifFrameDurationAndNumberOfCycles.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Gif\SupportOfFullFrameGif.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Html5Canvas\ExportToHtml5Canvas.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ICO\ConvertICOToTiff.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ImageScopedFonts.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ImplementationOfLossyGIFCompressor.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ColorTypeAndCompressionType.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ConvertTIFFToJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\JpegSavedQualityEstimation.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportFor2-7BitsJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForCMYKAndYCCKColorModesInJPEGLossless.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForCMYKAndYCCKColorModesInJPEGLosslessUsingRGBProfile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSFormat.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG-LSWithCMYK.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\SupportForJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MagicWandTool.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ManualImageMasking.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDicom.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDithering.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInDJVU.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInFilters.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInJPEG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInJPEG2000.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInResize.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInRotate.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInTiff.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MemoryStrategies\OptimizationStrategyInWebP.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\ConvertingEMFToWMF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\MetaFilesAsSVG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEmfGraphics.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEMFPlustoFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\SaveEMFtoFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\SupportForReplacingMissingFonts.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Multipage\CommonMultipageImageExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Multipage\MultipageFromImages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MultipleImagesToTIFF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\OTG\DefaultFontUsageImprove.cs" />
+    <Compile Include="ModifyingAndConvertingImages\OTG\SupportOfFODG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\OTG\SupportOfOTG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PixelPerfectTextAlignment.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNGtoPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertImageWithGrayscale.cs" />
+    <Compile Include="ModifyingAndConvertingImages\GetLastModifiedDate.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFToWebp.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\AddAlphaBlendingForImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\ChangeWindowSize.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\ConvertTo1BitPng.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\KeepTransparencyWhenIndexingPngImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\ReadLargePNGFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\Support16BitChannel64BitPng.cs" />
+    <Compile Include="ModifyingAndConvertingImages\RasterImageToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ReadingPixelVaules.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Remove background\GraphCutAutoMasking.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Remove background\RemoveBackgroundVectors.cs" />
+    <Compile Include="ModifyingAndConvertingImages\RemoveWatermarkFilter.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ResizeWMFFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CreateEMFMetaFileImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExportTextAsShape.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AddSignatureToImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ColorConversionUsingDefaultProfiles.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ColorConversionUsingICCProfiles.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AddDiagonalWatermarkToImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ControllCacheReallocation.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertWMFMetaFileToSVG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CreateWMFMetaFileImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertEMFToWMF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConcatenateTiffImagesHavingSeveralFrames.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConcatenatingTIFFImagesfromStream.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertingSVGToRasterImages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyingMotionWienerFilter.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Bradleythreshold.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertDjVuToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertSpecificPortionOfDjVuPage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertRangeOfDjVuPagesToSeparateImages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertRangeOfDjVuPages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DjVu\ConvertDjVuToTIFF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExportImageToDifferentFormats.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExportImageToPSD.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AddWatermarkToImage.cs" />
+    <Compile Include="DrawingAndFormattingImages\CreatingAnImageBySettingPath.cs" />
+    <Compile Include="DrawingAndFormattingImages\CreatingImageUsingStream.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AddFramesToTIFFImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\AdjustBrightnessDICOM.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DICOMCroppingByShifts.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DICOMSOtherImageResizingOptions.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DitheringForDICOMImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\DICOMSimpleResizing.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\FlipDICOMImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\RotatingDICOMImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\GrayscalingOnDICOM.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\BinarizationWithBradleysAdaptiveThreshold.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\BinarizationWithOtsuThresholdOnDICOMImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\BinarizationWithFixedThresholdOnDICOMImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\ApplyFilterOnDICOMImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\AdjustGammaDICOM.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DICOM\AdjustContrastDICOM.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\CroppingByRectangleEMFImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\SpecifyFontFolder.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\ExportMetaFileToRasterFormats.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\CroppingEMFImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\MetaFiles\ConvertEMFToPDF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PSD\CreateIndexedPSDFiles.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConvertGIFImageLayersToTIFF.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AlignHorizontalAndVeticalResolutionsOfImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\BlurAnImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilterForColoredImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyGaussWienerFilter.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ApplyMedianAndWienerFilters.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ReadAndWriteXMPDataToImages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\RGBColorSytem.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SavingSVGWithFonts.cs" />
+    <Compile Include="ModifyingAndConvertingImages\StreamHelper.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportBMPHeader.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportForEPSFormat.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportForODG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportOfDPISettingsInPdfOptions.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportOfSmoothingMode.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportOfTextRenderingHint.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportOfDIB.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SupportTiffDeflate.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\ConvertWMFToSVG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\ConvOfOtherFormatsToSVG.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\SvgNativeResize.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\SVGToBMPConversion.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\SVGToEMFConversion.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SVG\UnifyExtractionOfRasterImagesEmbeddedInVectorFormats.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SyncRootProperty.cs" />
+    <Compile Include="ModifyingAndConvertingImages\TGA\ConvertToTGA.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Tiff\CreateGraphicsPathFromPathTiffResourcesAndViceVersa.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Tiff\ExportTiffBatchMode.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Tiff\SetDPIInExportedPdf.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Tiff\SupportExtractingPathsFromTiff.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Tiff\SupportOfGetOriginalOptions.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\ExtractFrameFromWebPImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportWebPToOtherImageFormats.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\ExportToWebP.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\CreatingWebPImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\ConvertGIFFImageFrame.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExpandOrCropAnImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\Grayscaling.cs" />
+    <Compile Include="ModifyingAndConvertingImages\BinarizationWithOtsuThreshold.cs" />
+    <Compile Include="ModifyingAndConvertingImages\BinarizationWithFixedThreshold.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AdjustGamma.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AdjustContrast.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\ChangeBackgroundColor.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\ApplyFilterMethod.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\SpecifyBitDepth.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\CompressingFiles.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\SpecifyTransparencyUsingRasterImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\SettingResolution.cs" />
+    <Compile Include="ModifyingAndConvertingImages\PNG\SpecifyTransparency.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ResizeImageWithResizeTypeEnumeration.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ResizingWithResizeTypeEnumeration.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SimpleResizeImageProportionally.cs" />
+    <Compile Include="ModifyingAndConvertingImages\RotatingImageOnSpecificAngle.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SimpleResizing.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\RotatingAnImage.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\CroppingByRectangle.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\CroppingByShifts.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\AutoCorrectOrientationOfJPEGImages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ReadAllEXIFTags.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ReadJpegEXIFTags.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\AddThumbnailToEXIFSegment.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\AddThumbnailToJFIFSegment.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\WritingAndModifyingEXIFData.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ReadSpecificEXIFTagsInformation.cs" />
+    <Compile Include="ModifyingAndConvertingImages\JPEG\ReadAndModifyJpegEXIFTags.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SavingEachFrameInOtherRasterImageFormat.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SplittingTiffFrames.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CompressingTIFFImagesWithLZWAlgorithm.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CompressingTIFFImagesWithAdobeDeflateCompression.cs" />
+    <Compile Include="ModifyingAndConvertingImages\CreatingTIFFImageWithCompression.cs" />
+    <Compile Include="ModifyingAndConvertingImages\SavingRasterImageToTIFFWithCompression.cs" />
+    <Compile Include="ModifyingAndConvertingImages\AdjustBrightness.cs" />
+    <Compile Include="ModifyingAndConvertingImages\TiffOptionsConfiguration.cs" />
+    <Compile Include="ModifyingAndConvertingImages\TiffDataRecovery.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ConcatTIFFImages.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawImagesUsingCoreFunctionality.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawingUsingGraphicsPath.cs" />
+    <Compile Include="ModifyingAndConvertingImages\DitheringRasterImages.cs" />
+    <Compile Include="ModifyingAndConvertingImages\ExtractTIFFFramesToBMPImageFormat.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\OpenWebPFile.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\WebPToGifExample.cs" />
+    <Compile Include="ModifyingAndConvertingImages\WebPImages\WebPToPdfExample.cs" />
+    <Compile Include="Plugins\CommonExample.cs" />
+    <Compile Include="Plugins\ConversionPlugin.cs" />
+    <Compile Include="Plugins\CropPlugin.cs" />
+    <Compile Include="Plugins\ImageAlbumPlugin.cs" />
+    <Compile Include="Plugins\MergePlugin.cs" />
+    <Compile Include="Plugins\ResizePlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawingArc.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawingBezier.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawingEllipse.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawingLines.cs" />
+    <Compile Include="DrawingAndFormattingImages\DrawingRectangle.cs" />
+    <Compile Include="RunExamples.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Aspose\Imaging\FileFormats\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
